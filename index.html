@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Titulo de Web -->
+<title>Icons – Animation</title>
+	
+<!-- Meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+
+<style>
+* { margin:0; padding:0; }
+
+p {
+	font-family:Arial, sans-serif;
+	font-size:12px;
+	line-height: 1.5em;
+}
+
+p span {
+	font-family:monospace, sans-serif;
+	display:block;
+}
+
+html { background: #ffffff; padding:20px; }
+   
+.container { width:400px; height:400px; position:absolute; top:50%; left:50%; margin-left:-200px; margin-top:-200px; text-align: center; }
+
+#Contrato {
+	animation: fade 2s ease-in;
+}
+
+.page {
+	animation: float 2s ease-in-out infinite; 
+}
+
+@keyframes float {
+  0%,100% {
+    transform: translateY(0);
+  }
+  50% {
+	transform: translateY(-4px)
+  }
+}
+
+
+.blue-square {
+	animation: rotation 2s linear infinite;
+	transform-origin: 60.279998779296875px 88.98999786376953px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+.lineas {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: dash 1500ms ease-out forwards, float 2s ease-in-out infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.signature-1 {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 80;
+  animation: sign 1s linear forwards, float 2s ease-in-out infinite;
+}
+
+.signature-2 {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+  animation: dash 1s linear forwards, float 2s ease-in-out infinite;
+}
+
+@keyframes sign {
+  from {
+    stroke-dashoffset: 40;
+  }
+  to {
+    stroke-dashoffset: 80;
+  }
+}
+
+.check-blue {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: check-box 2000ms cubic-bezier(1, 0.4, 0.5, 1) forwards;
+  animation-delay: 200ms;
+
+}
+
+.check-green {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: check-box 2000ms cubic-bezier(1, 0.4, 0.5, 1) forwards;
+  animation-delay: 200ms;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    
+  }
+  30%,100% {
+    opacity: 1;
+  }
+}
+
+@keyframes check-box {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 200;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+svg {
+	max-width: 70%;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<svg id="Contrato" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 213 188">
+			<rect class="blue-square" fill="#e1f3fc" x="16.36" y="45.07" width="87.84" height="87.84" rx="14" ry="14" transform="translate(80.58 -16.56) rotate(45)" />
+			<rect class="page" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#10123a" stroke-width="6px" x="52.66" y="7" width="124.44" height="174" rx="4" ry="4"/>
+			<line class="lineas line-7" stroke-linecap="round" stroke-linejoin="round" stroke="#10123a" stroke-width="6px" x1="71.14" y1="127.52" x2="110.95" y2="127.52"/>
+			<line class="lineas line-6" stroke-linecap="round" stroke-linejoin="round" stroke="#10123a" stroke-width="6px" x1="71.14" y1="114.26" x2="158.62" y2="114.26"/>
+			<line class="lineas line-5" stroke-linecap="round" stroke-linejoin="round" stroke="#10123a" stroke-width="6px" x1="71.14" y1="96.36" x2="99.76" y2="96.36"/>
+			<line class="lineas line-4" stroke-linecap="round" stroke-linejoin="round" stroke="#10123a" stroke-width="6px" x1="71.14" y1="83.1" x2="158.62" y2="83.1"/>
+			<line class="lineas line-3" stroke-linecap="round" stroke-linejoin="round" stroke="#10123a" stroke-width="6px" x1="71.14" y1="69.83" x2="158.62" y2="69.83"/>
+			<line class="lineas line-2" stroke-linecap="round" stroke-linejoin="round" stroke="#10123a" stroke-width="6px" x1="71.14" y1="56.57" x2="150.76" y2="56.57"/>
+			<line class="lineas line-1" stroke-linecap="round" stroke-linejoin="round" stroke="#10123a" stroke-width="6px" x1="71.14" y1="33.53" x2="93.01" y2="33.53"/>
+			<path class="signatures signature-1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#10123a" stroke-width="6px" d="M103.35,152.32c-3,0-3-4-6-4s-3,4-6,4-3-4-6-4-3,4-6,4"/>
+			<path class="signatures signature-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#10123a" stroke-width="6px" d="M118.48,148.32c3,0,3,4,6,4s3-4,6-4,3,4,6,4,3-4,6-4"/>
+			<polyline class="check-blue" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#10123a" stroke-width="17px" points="202.09 115.92 176.98 143.35 166.06 132.42"/>
+			<polyline class="check-green" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="6px" stroke="#69ff90" points="202.09 115.92 176.98 143.35 166.06 132.42"/>
+		</svg>
+    </div>    
+</body>
+
+</html>
+
+
+<p>En SVGS la propiedad transform-origin no toma el valor correcto si es declarada en formato texto.</p>
+<p>Para sacar el centro de un SVG podemos usar el siguiente código en la consola:</p>
+<p><span>const id = document.getElementById('id');</span>
+<span>const rect = id.getBBox();</span>
+<span>const x = rect.x + rect.width / 2;</span>
+<span>const y = rect.y + rect.height / 2;</span></p>

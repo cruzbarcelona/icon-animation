@@ -1,6 +1,4 @@
-# Animaciones Codeadas
+# Coded Animations
 #### WORKSHOP
 
-En este workshop aprendimos a animar con CSS, JS y SVG de la mano de Facundo Pepe (@turbofacu).
-
-Acá el resultado de lo que aprendí.
+Just a little something I've learnt using CSS, JS & SVG. Thank you @turbofacu for the help.
